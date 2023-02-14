@@ -2,11 +2,7 @@
   <div>
     <div class="title">周末去哪儿</div>
     <ul>
-      <li
-        class="item border-bottom"
-        v-for="item of recommendList"
-        :key="item.id"
-      >
+      <li class="item border-bottom" v-for="item of weekendList" :key="item.id">
         <div class="item-img-wrapper">
           <img class="item-img" :src="item.imgUrl" />
         </div>
@@ -21,10 +17,10 @@
 
 <script>
 export default {
-  name: "HomeRecommend",
+  name: "HomeWeekend",
   data() {
     return {
-      recommendList: [
+      weekendList: [
         {
           id: "0001",
           imgUrl:
