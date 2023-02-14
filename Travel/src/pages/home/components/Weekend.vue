@@ -2,11 +2,15 @@
   <div>
     <div class="title">周末去哪儿</div>
     <ul>
+<<<<<<< HEAD
       <li
         class="item border-bottom"
         v-for="item of recommendList"
         :key="item.id"
       >
+=======
+      <li class="item border-bottom" v-for="item of weekendList" :key="item.id">
+>>>>>>> index-ajax
         <div class="item-img-wrapper">
           <img class="item-img" :src="item.imgUrl" />
         </div>
@@ -21,10 +25,17 @@
 
 <script>
 export default {
+<<<<<<< HEAD
   name: "HomeRecommend",
   data() {
     return {
       recommendList: [
+=======
+  name: "HomeWeekend",
+  data() {
+    return {
+      weekendList: [
+>>>>>>> index-ajax
         {
           id: "0001",
           imgUrl:
